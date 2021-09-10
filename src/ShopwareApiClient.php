@@ -161,6 +161,20 @@ class ShopwareApiClient
             ->post($uri, $data);
     }
 
+    public function performPatchRequest(string $uri, array $data, Header $header = null): Response
+    {
+        $this->checkBearer();
+
+        if (is_null($header)) {
+            $header = new Header();
+        }
+
+        return $this->http::baseUrl($this->domain)
+            ->withToken($this->bearer)
+            ->withHeaders($header->toArray())
+            ->patch($uri, $data);
+    }
+
     public function performSyncRequest(array $data, Header $header = null): Response
     {
         $this->checkBearer();
