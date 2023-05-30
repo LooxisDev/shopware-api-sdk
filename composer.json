@@ -30,14 +30,13 @@
         }
     },
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "nesbot/carbon": "^2.45",
-        "illuminate/support": "^8.29",
-        "guzzlehttp/guzzle": "^7.2",
-        "illuminate/contracts": "^8.29"
+        "illuminate/support": "^9.0",
+        "guzzlehttp/guzzle": "^7.2"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0",
+        "orchestra/testbench": "^7.0",
         "phpunit/phpunit": "^9.5",
         "barryvdh/laravel-ide-helper": "^2.9"
     },
